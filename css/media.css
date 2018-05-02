@@ -1537,17 +1537,17 @@
     }
 
     .newswarp .xin .a1.on {
-        background-image: url(../images/63011.png);
+        background-image: url(../ssfc/images/12.png);
         background-size: 36px;
     }
 
     .newswarp .xin .a2.on {
-        background-image: url(../images/63031.png);
+        background-image: url(../ssfc/images/22.png);
         background-size: 36px;
     }
 
     .newswarp .xin .a3.on {
-        background-image: url(../images/63021.png);
+        background-image: url(../ssfc/images/32.png);
         background-size: 36px;
     }
 }
