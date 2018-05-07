@@ -3709,6 +3709,14 @@ fieldset {
     width:100%;
     height: 38px
 }
+
+input[type=radio]{
+
+width: 15px;
+height: 15px
+}
+
+
 #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
     width: 100%;
     border: 1px solid #ccc;

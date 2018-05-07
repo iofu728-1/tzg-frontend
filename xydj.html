@@ -136,17 +136,22 @@
 
             <fieldset>
                 <label>性别</label>
-                 <select  id="sex">
-                    <option selected="selected" disabled="disabled"  style='display: none' value=''></option>
-                    <option value="男" />男</option>
-                    <option value="女" />女</option>
-                </select>
+
+                    <div style="text-align: left;padding:10px 0; ">
+                    <input type="radio" name="sex" value="1"><label style="margin-right: 35%">男</label>
+                    <input type="radio" name="sex" value="0"><label>女</label>
+                    </div>
             </fieldset>
 
-
             <fieldset>
-                <label>工作单位</label>
-                <input id="workCompany" type="text" tabindex="2" required>
+                <label>称呼</label>
+                <select id="educationLevel" required>
+                <option selected="selected" disabled="disabled"  style='display: none' value=''></option>
+                <option value="professor" >教授</option>
+                <option value="doctor" >博士</option>
+                <option value="mr" >先生</option>
+                <option value="ms" >女士</option>
+                </select>
             </fieldset>
 
             <fieldset style="font-size:16px;text-align: left;">
@@ -283,15 +288,7 @@
             </fieldset>
 
             <br></br>
-            <fieldset>
-                <label>毕业学位</label>
-                <select id="educationLevel" required>
-                <option selected="selected" disabled="disabled"  style='display: none' value=''></option>
-                <option value="本科" >本科</option>
-                <option value="硕士" >硕士</option>
-                <option value="博士" >博士</option>
-                </select>
-            </fieldset>
+            
 
             <fieldset>
                 <label>手机号码</label>
@@ -306,8 +303,8 @@
             <fieldset>
                 <label>是否参加晚宴</label>
                 <br></br>
-                    <input type="radio" name="attend"><label>是</label>
-                    <input type="radio" name="attend"><label>否</label>
+                    <input type="radio" name="attend" value="1"><label style="margin-right: 35%">是</label>
+                    <input type="radio" name="attend" value="0" ><label>否</label>
 
             </fieldset>
 
@@ -315,11 +312,10 @@
                 <label>是否安排住宿</label>
                     <br></br>
 
-                    <input type="radio" name="hotel" value="hotel1"><label>经济型</label><br></br>
-                    <input type="radio" name="hotel" value="hotel2"><label>舒适型</label><br></br>
-                    <input type="radio" name="hotel" value="hotel3"><label>豪华型</label><br></br>
+                    <input type="radio" name="hotel" value="1"><label style="margin-right: 35%">是</label>
 
-                    <input type="radio" name="hotel" value="hotel0"><label>否</label>
+
+                    <input type="radio" name="hotel" value="0"><label>否</label>
             </fieldset>
 
 
