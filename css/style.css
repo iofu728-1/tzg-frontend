@@ -3671,13 +3671,13 @@ a:hover {
 }
 
 #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] {
-    font: 400 12px/16px "Open Sans", Helvetica, Arial, sans-serif;
+    font: 400 16px "Open Sans", Helvetica, Arial, sans-serif;
 }
 
 #contact {
     background: #FFFFFF;
     padding: 25px;
-    margin: 5px 0;
+    margin: 0px 0;
 }
 
 #contact h3 {
@@ -3697,17 +3697,25 @@ fieldset {
     display: inline-block;
     border: medium none !important;
     margin: 0 0 10px;
-
     padding: 0;
-    width: 90%;
-}
+    width: 100%;
 
+}
+#contact  label{
+    font-size:16px;
+
+}
+#contact select{
+    width:100%;
+    height: 38px
+}
 #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
     width: 100%;
     border: 1px solid #ccc;
     background: #FFF;
     margin: 0 0 5px;
-    padding: 10px;
+    padding: 10px 0;
+    height: 16px;
 }
 
 #contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
@@ -3739,6 +3747,9 @@ fieldset {
     text-align: center;
 }
 
+#sex {
+    font-size: 16px
+}
 #contact button[type="submit"]:hover {
     background: #9b0000;
     -webkit-transition: background 0.3s ease-in-out;
