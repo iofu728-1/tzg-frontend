@@ -41,15 +41,18 @@
 
             var f = document.contact;
             var name = f.name.value;
+            var sex = f.sex.value;
             var workCompany = f.workCompany.value;
             var startYear = f.startYear.value;
-            var educationLevel = f.educationLevel.value;
+            var graYear = f.graYear.value;
             var phoneNum = f.phoneNum.value;
             var email = f.email.value;
-
+            var party = f.party.value;
+            var hotel = f.hotel.value;
+            
             var url = "./insert.php";
 
-            var postStr = "&name=" + name + "&workCompany=" + workCompany + "&startYear=" + startYear + "&educationLevel=" + educationLevel + "&phoneNum=" + phoneNum + "&email=" + email;
+            var postStr = "&name=" + name + "&sex=" + sex + "&workCompany=" + workCompany + "&startYear=" + startYear + "&graYear=" + graYear + "&phoneNum=" + phoneNum + "&email=" + email + "&party=" + party + "&hotel=" + hotel;
 
             var ajax = false;
             //开始初始化XMLHttpRequest对象
@@ -137,16 +140,15 @@
 
             <fieldset>
                 <label>性别</label>
-
                     <div style="text-align: left;padding:10px 0; ">
-                    <input type="radio" name="sex" value="1"><label style="margin-right: 35%">男</label>
-                    <input type="radio" name="sex" value="0"><label>女</label>
+                    <input id="sex" type="radio" name="sex" value="1"><label style="margin-right: 35%">男</label>
+                    <input id="sex" type="radio" name="sex" value="0"><label>女</label>
                     </div>
             </fieldset>
 
             <fieldset>
                 <label>工作单位</label>
-                <input id="workplace" type="text" tabindex="1" required autofocus>
+                <input id="workCompany" type="text" tabindex="1" required autofocus>
             </fieldset>
 
             <fieldset>
@@ -303,19 +305,16 @@
             <fieldset>
                 <label>是否参加晚宴</label>
                 <br></br>
-                    <input type="radio" name="attend" value="1"><label style="margin-right: 35%">是</label>
-                    <input type="radio" name="attend" value="0" ><label>否</label>
+                    <input id='party' type="radio" name="attend" value="1"><label style="margin-right: 35%">是</label>
+                    <input id='party' type="radio" name="attend" value="0" ><label>否</label>
 
             </fieldset>
 
             <fieldset>
                 <label>是否安排住宿</label>
                     <br></br>
-
-                    <input type="radio" name="hotel" value="1"><label style="margin-right: 35%">是</label>
-
-
-                    <input type="radio" name="hotel" value="0"><label>否</label>
+                    <input id='hotel' type="radio" name="hotel" value="1"><label style="margin-right: 35%">是</label>
+                    <input id='hotel' type="radio" name="hotel" value="0"><label>否</label>
             </fieldset>
             <div style="color: #333333;margin:20px 0;font-size: 16px ;text-align: center;">
             * 校友登记中的所有个人信息不会被公开。
