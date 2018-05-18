@@ -1,0 +1,22 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <table>
+            <tr><td>id</td></tr>
+<?php
+    mysql_connect('localhost','root','');
+    mysql_select_db('test');
+    mysql_query("SET NAMES utf8");
+    $sql = "select * from signforms";
+    $result = mysql_query($sql);
+    while($row=mysql_fetch_assoc($result)){
+?>
+
+   <tr><td><?php echo $row['id'];?></tr></td>
+
+<?php    
+    } 
+?>
+        </table>
+    </body>
